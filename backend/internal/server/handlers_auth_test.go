@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/danielgtaylor/huma/v2"
-	"github.com/nicholascathcart/nhc-starter/backend/internal/repositories"
-	models "github.com/nicholascathcart/nhc-starter/backend/models/generated"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/repositories"
+	models "github.com/nhcathcart/oops-my-turn/backend/models/generated"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/oauth2"
 )

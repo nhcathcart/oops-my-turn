@@ -11,14 +11,14 @@ export default function HomePage() {
   return (
     <PageContainer>
       <PageHeader
-        title="Starter Dashboard"
-        subtitle="This template keeps Google OAuth, the generated API client, PostgreSQL, and Terraform in place."
+        title="oops-my-turn dashboard"
+        subtitle="This app keeps Google OAuth, the generated API client, PostgreSQL, and Terraform in place."
       />
 
       <Card>
         <CardHeader>
           <CardTitle>Signed In</CardTitle>
-          <CardDescription>Your authenticated starter route is working.</CardDescription>
+          <CardDescription>Your authenticated oops-my-turn route is working.</CardDescription>
         </CardHeader>
         <CardContent className="space-y-2 text-sm">
           <p>

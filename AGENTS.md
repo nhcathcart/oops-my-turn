@@ -4,7 +4,7 @@ This file provides guidance to Claude Code when working in this repository.
 
 ## Project Overview
 
-This repository is a full-stack starter application: a Go backend (Huma v2, PostgreSQL/pgx, Bob ORM, sql-migrate, oapi-codegen) and a React frontend (Vite, TanStack Query, shadcn/ui, Tailwind v4).
+This repository is a full-stack application for `oops-my-turn`: a Go backend (Huma v2, PostgreSQL/pgx, Bob ORM, sql-migrate, oapi-codegen) and a React frontend (Vite, TanStack Query, shadcn/ui, Tailwind v4).
 
 ## Commands
 
@@ -201,12 +201,12 @@ func (s *IntegrationTestSuite) TestGetProject() {
 
 ## Database
 
-- **DB name**: starter
-- **User**: starter
+- **DB name**: oops_my_turn
+- **User**: oops_my_turn
 - **Password**: 12345
 - **Host**: localhost
 - **Port**: 5432
-- **Connection**: `postgres://starter:12345@localhost:5432/starter?sslmode=disable`
+- **Connection**: `postgres://oops_my_turn:12345@localhost:5432/oops_my_turn?sslmode=disable`
 
 ## SDK Generation Flow
 

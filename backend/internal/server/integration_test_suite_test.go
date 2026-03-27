@@ -13,10 +13,10 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
-	"github.com/nicholascathcart/nhc-starter/backend/internal/repositories"
-	"github.com/nicholascathcart/nhc-starter/backend/internal/server"
-	"github.com/nicholascathcart/nhc-starter/backend/schemata"
-	"github.com/nicholascathcart/nhc-starter/backend/sdk"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/repositories"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/server"
+	"github.com/nhcathcart/oops-my-turn/backend/schemata"
+	"github.com/nhcathcart/oops-my-turn/backend/sdk"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
@@ -44,8 +44,8 @@ func (s *IntegrationTestSuite) SetupSuite() {
 
 	container, err := tcpostgres.Run(ctx,
 		"postgres:16-alpine",
-		tcpostgres.WithDatabase("starter"),
-		tcpostgres.WithUsername("starter"),
+		tcpostgres.WithDatabase("oops_my_turn"),
+		tcpostgres.WithUsername("oops_my_turn"),
 		tcpostgres.WithPassword("12345"),
 		testcontainers.WithWaitStrategy(
 			wait.ForLog("database system is ready to accept connections").WithOccurrence(2),
@@ -59,7 +59,7 @@ func (s *IntegrationTestSuite) SetupSuite() {
 	mappedPort, err := container.MappedPort(ctx, "5432")
 	require.NoError(s.T(), err)
 
-	dsn := fmt.Sprintf("postgres://starter:12345@%s:%s/starter?sslmode=disable", host, mappedPort.Port())
+	dsn := fmt.Sprintf("postgres://oops_my_turn:12345@%s:%s/oops_my_turn?sslmode=disable", host, mappedPort.Port())
 	dbConfig, err := pgx.ParseConfig(dsn)
 	require.NoError(s.T(), err)
 	s.db = stdlib.OpenDB(*dbConfig)

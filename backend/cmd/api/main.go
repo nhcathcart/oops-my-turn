@@ -14,8 +14,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/stdlib"
-	"github.com/nicholascathcart/nhc-starter/backend/internal/config"
-	"github.com/nicholascathcart/nhc-starter/backend/internal/server"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/config"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/server"
 )
 
 var version = "dev"

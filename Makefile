@@ -26,7 +26,7 @@ db-reset: ## Recreate the local Postgres database and rerun migrations for the c
 
 .PHONY: db-shell
 db-shell: ## Open a psql shell
-	@cd backend && docker compose exec postgres psql -U starter starter
+	@cd backend && docker compose exec postgres psql -U oops_my_turn oops_my_turn
 
 .PHONY: new-migration
 new-migration: ## Create a new timestamped migration file (usage: make new-migration NAME=add_users)
@@ -133,7 +133,7 @@ frontend-typecheck: ## Run TypeScript type checker on the frontend
 
 # --- Containers ---
 
-TF_IMAGE_NAME := starter-terraform:local
+TF_IMAGE_NAME := oops-my-turn-terraform:local
 TF_DOCKER_WORKDIR := /workspace
 TF_BASE_DIRECTORY := $(TF_DOCKER_WORKDIR)/terraform
 AWS_CONFIG_MOUNT := $(HOME)/.aws:/root/.aws:ro
@@ -141,11 +141,11 @@ AWS_PROFILE ?=
 AWS_REGION ?= us-east-1
 TF_ENV ?= dev
 IMAGE_TAG ?= latest
-API_IMAGE_REPO := starter-$(TF_ENV)-api
+API_IMAGE_REPO := oops-my-turn-$(TF_ENV)-api
 
 .PHONY: docker-build-api
 docker-build-api: ## Build the API container image
-	@docker build --platform linux/amd64 -f backend/Dockerfile.api -t starter-api:local backend
+	@docker build --platform linux/amd64 -f backend/Dockerfile.api -t oops-my-turn-api:local backend
 
 .PHONY: ecr-login
 ecr-login: ## Log Docker into ECR using the active AWS CLI profile/credentials
@@ -159,7 +159,7 @@ docker-push-api: docker-build-api ecr-login ## Build, tag, and push the API imag
 	REGISTRY="$$ACCOUNT_ID.dkr.ecr.$(AWS_REGION).amazonaws.com"; \
 	REMOTE_IMAGE="$$REGISTRY/$(API_IMAGE_REPO):$(IMAGE_TAG)"; \
 	echo "Pushing $$REMOTE_IMAGE"; \
-	docker tag starter-api:local "$$REMOTE_IMAGE"; \
+	docker tag oops-my-turn-api:local "$$REMOTE_IMAGE"; \
 	docker push "$$REMOTE_IMAGE"
 
 .PHONY: migrate-deploy

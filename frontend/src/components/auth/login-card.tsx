@@ -9,8 +9,8 @@ export function LoginCard({ onSignIn }: LoginCardProps) {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="text-center">
-        <h1 className="text-2xl font-semibold">Starter App</h1>
-        <CardDescription>Sign in with Google to access the starter dashboard</CardDescription>
+        <h1 className="text-2xl font-semibold">oops-my-turn</h1>
+        <CardDescription>Sign in with Google to access the oops-my-turn dashboard</CardDescription>
       </CardHeader>
       <CardContent>
         <Button className="w-full" onClick={onSignIn}>

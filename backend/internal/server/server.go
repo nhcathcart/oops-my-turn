@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"log/slog"
 
-	"github.com/nicholascathcart/nhc-starter/backend/internal/repositories"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/repositories"
 	"github.com/stephenafamo/bob"
 )
 

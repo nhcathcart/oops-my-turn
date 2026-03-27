@@ -20,9 +20,9 @@ type Config struct {
 
 	DbHost      string `env:"DB_HOST" envDefault:"localhost"`
 	DbPort      int    `env:"DB_PORT" envDefault:"5432"`
-	DbUser      string `env:"DB_USER" envDefault:"starter"`
+	DbUser      string `env:"DB_USER" envDefault:"oops_my_turn"`
 	DbPassword  string `env:"DB_PASSWORD" envDefault:"12345"`
-	DbName      string `env:"DB_NAME" envDefault:"starter"`
+	DbName      string `env:"DB_NAME" envDefault:"oops_my_turn"`
 	DbSSLMode   string `env:"DB_SSLMODE" envDefault:"disable"`
 	DBSecretARN string `env:"DB_SECRET_ARN"`
 

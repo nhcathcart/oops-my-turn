@@ -5,7 +5,7 @@ package urlutil_test
 import (
 	"testing"
 
-	"github.com/nicholascathcart/nhc-starter/backend/internal/urlutil"
+	"github.com/nhcathcart/oops-my-turn/backend/internal/urlutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -1,5 +1,5 @@
 psql:
-  dsn: "postgres://starter:12345@localhost:5432/starter?sslmode=disable"
+  dsn: "postgres://oops_my_turn:12345@localhost:5432/oops_my_turn?sslmode=disable"
   schemas:
     - public
   except:

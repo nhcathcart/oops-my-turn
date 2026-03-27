@@ -6,7 +6,7 @@ variable "aws_region" {
 variable "project_name" {
   description = "Base project name used in resource naming"
   type        = string
-  default     = "starter"
+  default     = "oops-my-turn"
 }
 
 variable "environment" {
@@ -21,7 +21,7 @@ variable "frontend_bucket_force_destroy" {
 }
 
 variable "vpc_cidr" {
-  description = "CIDR block for the starter VPC"
+  description = "CIDR block for the oops-my-turn VPC"
   type        = string
   default     = "10.42.0.0/16"
 }

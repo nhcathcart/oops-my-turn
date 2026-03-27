@@ -11,7 +11,7 @@ resource "aws_secretsmanager_secret" "db_master" {
 resource "aws_secretsmanager_secret_version" "db_master" {
   secret_id = aws_secretsmanager_secret.db_master.id
   secret_string = jsonencode({
-    username = "starter"
+    username = "oops_my_turn"
     password = random_password.db_master.result
   })
 }
@@ -42,7 +42,7 @@ resource "aws_db_subnet_group" "main" {
 
 resource "aws_db_instance" "main" {
   identifier                  = "${local.name_prefix}-postgres"
-  db_name                     = "starter"
+  db_name                     = "oops_my_turn"
   engine                      = "postgres"
   engine_version              = "16.13"
   instance_class              = "db.t4g.micro"
@@ -50,7 +50,7 @@ resource "aws_db_instance" "main" {
   max_allocated_storage       = 100
   storage_type                = "gp3"
   storage_encrypted           = true
-  username                    = "starter"
+  username                    = "oops_my_turn"
   password                    = random_password.db_master.result
   port                        = 5432
   db_subnet_group_name        = aws_db_subnet_group.main.name

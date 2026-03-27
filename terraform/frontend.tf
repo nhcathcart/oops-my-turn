@@ -8,7 +8,7 @@ data "aws_cloudfront_origin_request_policy" "all_viewer" {
 
 resource "aws_cloudfront_origin_access_control" "frontend" {
   name                              = "${local.name_prefix}-frontend"
-  description                       = "Origin access control for the starter frontend bucket"
+  description                       = "Origin access control for the oops-my-turn frontend bucket"
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"

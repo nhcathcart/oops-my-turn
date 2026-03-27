@@ -30,7 +30,7 @@ beforeEach(() => {
 test('renders the login card for signed out users', () => {
   renderPage()
 
-  expect(screen.getByRole('heading', { name: 'Starter App' })).toBeInTheDocument()
+  expect(screen.getByRole('heading', { name: 'oops-my-turn' })).toBeInTheDocument()
   expect(screen.getByRole('button', { name: 'Sign in with Google' })).toBeInTheDocument()
 })
 

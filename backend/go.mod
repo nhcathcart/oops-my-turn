@@ -1,4 +1,4 @@
-module github.com/nicholascathcart/nhc-starter/backend
+module github.com/nhcathcart/oops-my-turn/backend
 
 go 1.25.0
 

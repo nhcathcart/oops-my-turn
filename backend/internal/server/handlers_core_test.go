@@ -14,7 +14,7 @@ func (s *IntegrationTestSuite) TestGetHello() {
 	s.Require().NoError(err)
 	s.Equal(http.StatusOK, resp.StatusCode())
 	s.Require().NotNil(resp.JSON200)
-	s.Equal("Hello from the starter template.", resp.JSON200.Message)
+	s.Equal("Hello from oops-my-turn.", resp.JSON200.Message)
 }
 
 func (s *IntegrationTestSuite) TestGetMe() {

@@ -10,7 +10,7 @@ import (
 	"github.com/stephenafamo/bob/dialect/psql/im"
 	"go.jetify.com/typeid"
 
-	models "github.com/nicholascathcart/nhc-starter/backend/models/generated"
+	models "github.com/nhcathcart/oops-my-turn/backend/models/generated"
 )
 
 type UserRepository interface {

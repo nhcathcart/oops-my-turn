@@ -1,6 +1,6 @@
-# Starter App
+# oops-my-turn
 
-Starter App is a full-stack template with core infrastructure in place:
+oops-my-turn is the full-stack app in this repository:
 
 - Go API with Huma/OpenAPI
 - React frontend with Vite, TanStack Query, and shadcn/ui
@@ -8,7 +8,7 @@ Starter App is a full-stack template with core infrastructure in place:
 - Google OAuth login with signed session cookies
 - Terraform for AWS deployment of the API, database, and frontend
 
-The starter keeps one minimal vertical slice:
+The current app keeps one minimal vertical slice:
 
 - `GET /api/v1/hello` public endpoint
 - Google OAuth login/logout
@@ -55,9 +55,9 @@ Optional overrides:
 - `BACKEND_URL` defaults to `http://localhost:9000`
 - `DB_HOST` defaults to `localhost`
 - `DB_PORT` defaults to `5432`
-- `DB_USER` defaults to `starter`
+- `DB_USER` defaults to `oops_my_turn`
 - `DB_PASSWORD` defaults to `12345`
-- `DB_NAME` defaults to `starter`
+- `DB_NAME` defaults to `oops_my_turn`
 
 ## Common Commands
 
@@ -83,7 +83,7 @@ make lint
 
 ## Codegen Workflow
 
-This template keeps the database and API contract as the source of truth.
+This app keeps the database and API contract as the source of truth.
 
 1. Update SQL migrations or Huma handler contracts.
 2. Run `make generate`.
@@ -130,12 +130,12 @@ The Terraform stack provisions:
 - frontend S3 bucket and CloudFront distribution
 - Secrets Manager entries for runtime secrets
 
-See [terraform/README.md](/Users/nicholascathcart/nhc-starter/terraform/README.md) for usage.
+See `terraform/README.md` for usage.
 
-## Turning This Into Your Own Template
+## Project Naming
 
-Recommended next steps:
+This repository is named `oops-my-turn`.
 
-1. Rename the Go module and package metadata.
-2. Update `terraform/envs/dev.tfvars` and `project_name`.
-3. Add your first domain migration, repository, handler, and frontend route.
+- Go module path: `github.com/nhcathcart/oops-my-turn/backend`
+- Local Postgres defaults: database/user `oops_my_turn`
+- Terraform project default: `oops-my-turn`

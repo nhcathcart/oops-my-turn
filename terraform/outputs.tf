@@ -9,7 +9,7 @@ output "frontend_bucket_name" {
 }
 
 output "vpc_id" {
-  description = "VPC ID for the starter deployment"
+  description = "VPC ID for the oops-my-turn deployment"
   value       = aws_vpc.main.id
 }
 

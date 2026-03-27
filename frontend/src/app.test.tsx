@@ -28,16 +28,16 @@ beforeEach(() => {
   })
   vi.mocked(useLogout).mockReturnValue({ logout: vi.fn() } as any)
   vi.mocked(useGetHello).mockReturnValue({
-    data: { message: 'Hello from the starter template.' },
+    data: { message: 'Hello from oops-my-turn.' },
     isLoading: false,
   } as any)
 })
 
-test('renders the starter dashboard on the root route', async () => {
+test('renders the oops-my-turn dashboard on the root route', async () => {
   renderApp('/')
 
-  expect(await screen.findByRole('heading', { name: 'Starter Dashboard' })).toBeInTheDocument()
-  expect(screen.getByText('Hello from the starter template.')).toBeInTheDocument()
+  expect(await screen.findByRole('heading', { name: 'oops-my-turn dashboard' })).toBeInTheDocument()
+  expect(screen.getByText('Hello from oops-my-turn.')).toBeInTheDocument()
 })
 
 test('shows the home breadcrumb on the dashboard', async () => {

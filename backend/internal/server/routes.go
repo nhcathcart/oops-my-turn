@@ -14,7 +14,7 @@ import (
 func (s *Server) CreateRoutes() (http.Handler, huma.API, error) {
 	mux := http.NewServeMux()
 
-	api := humago.New(mux, huma.DefaultConfig("Starter API", s.options.Version))
+	api := humago.New(mux, huma.DefaultConfig("oops-my-turn API", s.options.Version))
 
 	api.UseMiddleware(s.recoverPanic, AddCommonHeaders, s.authenticateJWT)
 
@@ -59,7 +59,7 @@ func (s *Server) recoverPanic(ctx huma.Context, next func(huma.Context)) {
 }
 
 func AddCommonHeaders(ctx huma.Context, next func(huma.Context)) {
-	ctx.SetHeader("Server", "Starter API")
+	ctx.SetHeader("Server", "oops-my-turn API")
 	ctx.SetHeader("X-Content-Type-Options", "nosniff")
 	ctx.SetHeader("X-Xss-Protection", "1; mode=block;")
 	ctx.SetHeader("Referrer-Policy", "no-referrer")
@@ -72,7 +72,7 @@ func (s *Server) registerCoreRoutes(api huma.API) {
 		OperationID: "get-hello",
 		Method:      http.MethodGet,
 		Path:        "/api/v1/hello",
-		Summary:     "Get a public starter response",
+		Summary:     "Get a public oops-my-turn response",
 	}, s.handleHello)
 
 	// start auth region

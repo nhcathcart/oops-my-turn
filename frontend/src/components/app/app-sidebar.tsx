@@ -33,7 +33,7 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
           >
             <path d={LOGO_PATH} stroke="currentColor" strokeWidth="4" />
           </svg>
-          <span className="text-lg font-semibold">Starter</span>
+          <span className="text-lg font-semibold">oops-my-turn</span>
         </div>
       </SidebarHeader>
       <SidebarContent>

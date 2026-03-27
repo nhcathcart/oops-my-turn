@@ -1,6 +1,6 @@
 # Terraform
 
-This directory holds the AWS deployment infrastructure for the starter template.
+This directory holds the AWS deployment infrastructure for `oops-my-turn`.
 
 The initial layout is intentionally small:
 
@@ -11,7 +11,7 @@ The initial layout is intentionally small:
 - `ecr.tf`: ECR repository for the API image
 - `s3.tf`: S3 bucket for frontend assets
 - `outputs.tf`: useful identifiers for later stages
-- `envs/dev.tfvars`: starter values for a development environment
+- `envs/dev.tfvars`: `oops-my-turn` values for a development environment
 
 This stack provisions the deployed runtime for the API, database, and frontend.
 
@@ -40,5 +40,5 @@ The Make targets run Terraform in Docker, so you do not need a local Terraform i
 If you use an AWS CLI profile locally, the Make targets also mount `~/.aws` into the container. For example:
 
 ```bash
-AWS_PROFILE=starter AWS_REGION=us-east-1 make terraform-plan
+AWS_PROFILE=oops-my-turn AWS_REGION=us-east-1 make terraform-plan
 ```
