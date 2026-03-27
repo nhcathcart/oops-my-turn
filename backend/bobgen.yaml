@@ -1,0 +1,18 @@
+psql:
+  dsn: "postgres://starter:12345@localhost:5432/starter?sslmode=disable"
+  schemas:
+    - public
+  except:
+    _migration_status:
+
+plugins:
+  models:
+    destination: models/generated
+  factory:
+    disabled: true
+  dbinfo:
+    disabled: true
+  dberrors:
+    disabled: true
+  enums:
+    destination: models/enums

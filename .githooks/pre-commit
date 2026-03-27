@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Auto-fixing lint issues..."
+make lint-fix
+
+# Re-stage any files that were auto-fixed
+git add -u
+
+echo "Running linters..."
+make lint
+
+echo "Running frontend type checker..."
+make frontend-typecheck
+
+echo "Running backend unit tests..."
+make test
+
+echo "Running frontend unit tests..."
+make frontend-test
+
+echo "Running integration tests..."
+make integration

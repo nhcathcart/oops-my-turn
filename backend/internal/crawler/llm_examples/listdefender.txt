@@ -1,0 +1,47 @@
+# ListDefender
+
+> ListDefender is an email list protection platform that automatically cleans email lists, blocks bots and fake signups, and manages subscriber engagement. It integrates directly with CRMs including Keap, HighLevel, and ActiveCampaign to protect sender reputation and improve email deliverability for small businesses.
+
+ListDefender offers three core layers of protection: automated email list cleaning through regular SmartScans, real-time form protection via FormDefender to block bots and invalid submissions, and engagement management to identify and suppress unengaged contacts. Pricing starts at $20/month based on marketable contact count.
+
+The platform performs comprehensive email validation including domain and MX record verification, SMTP verification, disposable address detection, and role-based email identification. All contacts are automatically tagged in the CRM based on validation status (Green - Safe to email, Yellow - Re-engage, Red - Do not email).
+
+## Core Pages
+
+- [Home](https://listdefender.com): Main landing page with product overview, features, pricing calculator, and testimonials
+- [FAQ](https://listdefender.com/faq): Comprehensive frequently asked questions covering setup, features, pricing, integrations, and security
+- [Pricing](https://listdefender.com/#pricing): Interactive pricing calculator based on marketable contact count, starting at $20/month
+- [Demo](https://listdefender.com/demo): Book a private walkthrough or view product demonstrations
+- [Partners](https://listdefender.com/partners): Information about Agency Program ($60/month for unlimited client sub-accounts) and Affiliate Program (30% lifetime commissions)
+
+## Key Features
+
+- [Email List Cleaning](https://listdefender.com/#features): Automatic validation and cleaning with regular SmartScans to remove invalid, disposable, and low-quality addresses
+- [FormDefender (Bot Protection)](https://listdefender.com/#features): Real-time blocking of bots, fake signups, typos, and throwaway emails with behavior analysis and device fingerprinting
+- [Engagement Management](https://listdefender.com/#features): Auto-tagging based on opens, clicks, and activity to identify unengaged contacts and suppress inactive subscribers
+
+## Integrations
+
+ListDefender integrates with the following platforms with setup taking under 60 seconds:
+- ActiveCampaign
+- HighLevel (GoHighLevel)
+- Keap (formerly Infusionsoft)
+
+## Statistics
+
+- 300M+ emails cleaned and validated
+- 1.75M+ bots and fake sign-ups blocked
+- 2.5M+ valid, real subscribers added
+- 4.9/5 aggregate rating from 127 reviews
+
+## Technical Details
+
+The platform uses SmartScans that perform: domain and MX record verification, SMTP verification, undeliverable address check, disposable address check, vulgar/inappropriate content check, suspicious content check, role-based address check, tag address check, free/business address check, and catch-all domain check. Most validation options are configurable.
+
+FormDefender Enhanced Mode validates that new contacts have been appropriately vetted before receiving emails and can quickly delete contacts that shouldn't have been created, providing an additional layer of protection against sophisticated bots.
+
+## Optional
+
+- [Register](https://listdefender.app/register): Create a new ListDefender account
+- [Waitlist](https://listdefender.com/waitlist): Join waitlist for upcoming platform integrations
+- [Feature Suggestions](https://listdefender.frill.co/b/n0ed823m/feature-ideas): Submit feature requests and vote on ideas

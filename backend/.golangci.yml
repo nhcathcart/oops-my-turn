@@ -1,0 +1,54 @@
+version: "2"
+
+run:
+  timeout: 5m
+  build-tags:
+    - unit
+    - integration
+  modules-download-mode: readonly
+  allow-parallel-runners: true
+
+linters:
+  default: none
+  enable:
+    - unconvert
+    - bodyclose
+    - exhaustive
+    - gocyclo
+    - govet
+    - ineffassign
+    - lll
+    - rowserrcheck
+    - staticcheck
+    - whitespace
+    - gosec
+    - unused
+    - errcheck
+  settings:
+    exhaustive:
+      default-signifies-exhaustive: true
+    gocyclo:
+      min-complexity: 25
+    lll:
+      line-length: 140
+  exclusions:
+    rules:
+      - path: _test.go|_test_suite.go
+        linters:
+          - bodyclose
+          - govet
+          - errcheck
+      - linters:
+          - lll
+        text: "//"
+      - linters:
+          - lll
+        text: "/\\*"
+    paths:
+      - sdk
+      - models/generated
+
+formatters:
+  enable:
+    - gofmt
+    - goimports

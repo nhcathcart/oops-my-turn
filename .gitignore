@@ -1,0 +1,12 @@
+.env
+.gocache/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+backend/models/generated/
+backend/sdk/openapi.yaml
+backend/sdk/sdk.go
+frontend/src/api/generated/
+frontend/dist/
+frontend/node_modules/

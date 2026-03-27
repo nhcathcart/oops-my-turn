@@ -1,0 +1,7 @@
+.git
+.gitignore
+.DS_Store
+tmp
+coverage
+sdk
+models/generated/factory

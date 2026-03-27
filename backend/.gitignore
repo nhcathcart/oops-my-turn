@@ -1,0 +1,3 @@
+models/generated/
+sdk/openapi.yaml
+sdk/sdk.go

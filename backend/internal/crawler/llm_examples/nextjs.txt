@@ -1,0 +1,43 @@
+# Next.js
+
+> Next.js is a React framework for building full-stack web applications. It combines React components with routing, rendering, caching, deployment, and optimization features for production-ready web apps.
+
+The official Next.js llms.txt works best as a gateway document rather than a giant page-by-page catalog. It points models toward the main documentation index, version-specific docs, support policy, learning materials, and recent blog updates.
+
+## Documentation
+
+- [Documentation Index](https://nextjs.org/docs/llms.txt): Main Next.js documentation index for LLMs with guides, APIs, and reference material
+- [Full Documentation](https://nextjs.org/docs/llms-full.txt): Expanded documentation content for deeper reference and retrieval
+- [App Router Getting Started](https://nextjs.org/docs/app/getting-started): Entry point for the current App Router documentation
+- [Pages Router Docs](https://nextjs.org/docs/pages/building-your-application): Entry point for the Pages Router documentation
+
+## Versioned Docs
+
+- [Current Docs Index](https://nextjs.org/docs/llms.txt): LLM-oriented docs index for the current major version
+- [Next.js 15 Docs Index](https://nextjs.org/docs/15/llms.txt): Version-specific docs index for Next.js 15
+- [Next.js 14 Docs Index](https://nextjs.org/docs/14/llms.txt): Version-specific docs index for Next.js 14
+- [Support Policy](https://nextjs.org/support-policy): Official support windows, LTS definitions, and currently supported major versions
+
+## Learn Next.js
+
+- [React Foundations](https://nextjs.org/learn/react-foundations): Learn the React and JavaScript concepts that underpin modern Next.js applications
+- [App Router Course](https://nextjs.org/learn/dashboard-app): Build a full-stack application with the App Router and production-oriented patterns
+- [Pages Router Course](https://nextjs.org/learn/pages-router): Learn the Pages Router model and foundational Next.js application patterns
+- [SEO Course](https://nextjs.org/learn/seo): Learn search optimization techniques for production Next.js websites
+
+## Recent Updates
+
+- [Next.js 16.2: AI Improvements](https://nextjs.org/blog/next-16-2-ai) (2026-03-18): Next.js 16.2 ships AGENTS.md in create-next-app, browser log forwarding, dev server lock file with PID, and next-browser for AI agent debugging.
+- [Turbopack: What's New in Next.js 16.2](https://nextjs.org/blog/next-16-2-turbopack) (2026-03-18): Turbopack in Next.js 16.2 brings faster builds, SRI support, postcss.config.ts, tree shaking of dynamic imports, Server Fast Refresh, inline loader configuration, and over 200 bug fixes.
+- [Next.js 16.2](https://nextjs.org/blog/next-16-2) (2026-03-18): Next.js 16.2 includes Adapters, rendering performance improvements, improved debugging and error pages, and more.
+- [Building Next.js for an agentic future](https://nextjs.org/blog/agentic-future) (2026-02-12): How we built and sunset an in-browser agent, shipped MCP integration, and learned that better AI agent support means thinking from the agent's perspective.
+- [Inside Turbopack: Building Faster by Building Less](https://nextjs.org/blog/turbopack-incremental-computation) (2026-01-20): Learn how we built Turbopack with incremental computation to scale development and builds to massive Next.js applications.
+- [Next.js 16.1](https://nextjs.org/blog/next-16-1) (2025-12-18): Next.js 16.1 introduces Turbopack file system caching for development, a new bundle analyzer, and easier debugging in Node.js.
+- [Next.js Security Update: December 11, 2025](https://nextjs.org/blog/security-update-2025-12-11) (2025-12-11): Two additional vulnerabilities have been identified in React Server Components. Users should upgrade to patched versions immediately.
+- [Security Advisory: CVE-2025-66478](https://nextjs.org/blog/CVE-2025-66478) (2025-12-03): A critical vulnerability (CVE-2025-66478) has been identified in the React Server Components protocol. Users should upgrade to patched versions immediately.
+- [Next.js 16](https://nextjs.org/blog/next-16) (2025-10-21): Next.js 16 includes Cache Components, stable Turbopack, file system caching, React Compiler support, smarter routing, new caching APIs, and React 19.2 features.
+- [Next.js 16 (beta)](https://nextjs.org/blog/next-16-beta) (2025-10-09): Next.js 16 beta includes stable Turbopack, file system caching, React Compiler support, smarter routing, new caching APIs, and React 19.2 features.
+
+## Optional
+
+- [All Blog Posts](https://nextjs.org/blog): Full archive of Next.js release notes, product updates, and technical posts
